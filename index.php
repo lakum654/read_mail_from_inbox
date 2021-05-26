@@ -59,7 +59,7 @@ td, th {
             <?php
         
         /* Connecting Gmail server with IMAP */
-        $connection = imap_open('{imap.gmail.com:993/imap/ssl}INBOX', 'mahendralakum.ap@gmail.com', 'abfrfsobznogjoam') or die('Cannot connect to Gmail: ' . imap_last_error());
+        $connection = imap_open('{imap.gmail.com:993/imap/ssl}INBOX', 'mahendralakum.ap@gmail.com', 'genereted-password') or die('Cannot connect to Gmail: ' . imap_last_error());
 
         /* Search Emails having the specified keyword in the email subject */
         $emailData = imap_search($connection, 'SUBJECT "Google"');
